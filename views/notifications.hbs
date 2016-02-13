@@ -1,0 +1,49 @@
+<div class="col-xs-12">
+	<div class="box box-info">
+		<div class="box-header with-border">
+			<h3 class="box-title">Send SMS Notification</h3>
+		</div>
+		<div class="box-body">
+			<div class="form-group">
+				<label for="comment">Broadcast Messsage:</label>
+				<textarea class="form-control" rows="3" id="notification-message-box"
+					placeholder="Type the SMS message here ..."></textarea>
+			</div>
+			<div class="input-group-btn select" id="campus-map-dropdown">
+				<button type="button" class="btn btn-default dropdown-toggle dropdown-header" data-toggle="dropdown" aria-expanded="false">
+				<span class="selected">Select A Campus Map To Notify</span> <span class="caret"></span></button>
+				<ul class="dropdown-menu option scrollable-menu" role="menu" id="campus-map-dropdown-menu">
+					<!-- Data gets populated dynamically -->
+				</ul>
+			</div>
+			<div class="input-group-btn select" id="zone-map-dropdown">
+				<button type="button" class="btn btn-default dropdown-toggle dropdown-header" data-toggle="dropdown" aria-expanded="false">
+				<span class="selected">Zone: All</span> <span class="caret"></span></button>
+				<ul class="dropdown-menu option scrollable-menu" role="menu" id="zone-map-dropdown-menu">
+					<!-- Data gets populated dynamically -->
+				</ul>
+			</div>
+			<!-- Send Notifications Module -->
+			<div id="send-notification-button">
+				<button type="button" id="send-notification-button" class="btn btn-primary pull-right">Send SMS Messages</button>
+			</div>
+		</div>
+	</div>
+	<div class="box box-info">
+		<div class="box-header with-border">
+			<h3 class="box-title">Tracked Users</h3>
+		</div>
+		<div class="box-body">
+			<table id="users-data-table" class="table table-hover">
+				<thead>
+					<tr>
+						<th data-field="userId">User ID</th>
+						<th data-field="macAddress">MAC Address</th>
+						<th data-field="mapHierarchyString">Map Hierarchy</th>
+						<th data-field="lastLocatedTime">Last Located</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+</div>

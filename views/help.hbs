@@ -1,0 +1,22 @@
+<h1>CMX Education</h1>
+
+<p>CMX e911 provides a plug and play solution on top of CMX by providing an SMS emergency notification system. The system targets selected Campus, Building, Floors and notifies users in those specific areas. The system is an essential component in mitigating an emergency situation.</p>
+
+<h3>Login</h3>
+<p>The system requires an admin to login. Your system administrator default login and password is admin/admin. Once you are authenticated you have the ability to create your own unique username / password in the <a href="/admin">Admin</a> section.</p>
+
+<h3>Home</h3>
+<p><a href="/">Home</a> is essentially the notification center. Before you are able to target specific devices visit the <a href="/settings">Settings</a> section and update the information for your Twilio Account. Twilio is a cloud SMS provider for sending out notifications. Without you providing a proper Twilio account in Settings you won't be able to send SMS notifications.</p>
+
+<p>Also you will need to <a href="/register">Register</a> end user accounts in the system before they can be notified. We'll need their mac address along with their SMS number. Visit the <a href="/register">Register</a> section to register end users. You will be given an option to CSV import or manually created these users.<p>
+
+<p>Once you have your Twilio settings in place and you have registered your unique end users, you can target them in specific areas of your Campus. In <a href="/">Home</a> you can narrow down the scope of users by using the <strong>SELECT A CAMPUS MAP TO NOTIFY</strong> drop down. The system is dependent on CMX movement notifications. For users to be found a <strong>Movement</strong> notification type has to be created on the CMX side and pointed to this cloud app on port <strong>8000</strong>. Once you select a specific map; <strong>Tracked Users</strong> table will update dynamically and show the users that you will be targeting. Provide the SMS body and press <strong>SEND SMS MESSAGES</strong> Once this button is pressed the system will start notifying immediately.</p>
+
+<h3>Registration</h3>
+In the <a href="/registration">Registration</a> section you have the ability to create users manually. Essentially you will need to provide the system with the MAC address and the SMS number of the user.
+
+<h3>User</h3>
+<p>In the <a href="/user">User</a> section you can create other accounts. You also have the ability to delete other accounts. You are not allowed to delete yourself.</p>
+
+<h3>Settings</h3>
+In <a href="/settings">Settings</a> you are given options for setting Twilio account information. You will also have the ability to generate a CMX Developer Key (currently not being used).

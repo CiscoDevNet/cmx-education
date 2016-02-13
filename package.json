@@ -1,0 +1,53 @@
+{
+  "name": "cmx-education",
+  "version": "0.0.0",
+  "private": true,
+  "config": {
+    "unsafe-perm": true
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "listener": "node listener",
+    "mongo-express": "cp ./node_modules/mongo-express/config.default.js ./node_modules/mongo-express/config.js & sed -i -e 's/8081/4145/' ./node_modules/mongo-express/config.js & node ./node_modules/mongo-express",
+    "postinstall": "bower install --allow-root",
+    "prestart": "npm install --unsafe-perm"
+  },
+  "dependencies": {
+    "async": "*",
+    "bcrypt-nodejs": "*",
+    "body-parser": "^1.14.1",
+    "bower": "*",
+    "connect-flash": "*",
+    "connect-redis": "^3.0.1",
+    "cookie-parser": "^1.4.0",
+    "crypto": "*",
+    "csvtojson": "*",
+    "debug": "*",
+    "express": "^5.0.0-alpha.2",
+    "express-session": "*",
+    "hbs": "^4.0.0",
+    "json-query": "*",
+    "merge": "*",
+    "mongo-express": "^0.27.7",
+    "mongoose": "^4.3.0",
+    "multer": "^1.1.0",
+    "node-sass-middleware": "^0.9.7",
+    "nodemon": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-local": "*",
+    "passport-http": "*",
+    "redis": "^2.4.2",
+    "request": "*",
+    "serve-favicon": "*",
+    "twilio": "^3.2.0-edge",
+    "underscore": "*",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

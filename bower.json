@@ -1,0 +1,31 @@
+{
+  "name": "cmx-education",
+  "version": "0.0.0",
+  "authors": [
+    "Cisco Systems, Inc."
+  ],
+  "description": "A CMX based educatoin web app",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "jQuery#~2.1.4",
+    "bootstrap-material-design": "~0.5.5",
+    "font-awesome": "~4.5.0",
+    "bootstrap-table": "~1.9.1",
+    "angular": "~1.4.8",
+    "highcharts": "~4.2.1",
+    "blueimp-file-upload": "jquery-file-upload#~9.11.2",
+    "AdminLTE": "admin-lte#~2.3.2"
+  }
+}
